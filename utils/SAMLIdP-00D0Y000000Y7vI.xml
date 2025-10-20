@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" entityID="https://jmartintalavera-dev-ed.my.salesforce.com" validUntil="2035-10-18T15:57:23.935Z" xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-   <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+<?xml version="1.0" encoding="UTF-8"?><md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" entityID="https://jmartintalavera-dev-ed.my.salesforce.com" validUntil="2035-10-18T16:12:31.951Z" xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+   <md:IDPSSODescriptor WantAuthnRequestsSigned="false" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
       <md:KeyDescriptor use="signing">
          <ds:KeyInfo>
             <ds:X509Data>
@@ -7,8 +7,6 @@
             </ds:X509Data>
          </ds:KeyInfo>
       </md:KeyDescriptor>
-      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://jmartintalavera-dev-ed.my.salesforce.com/services/auth/idp/saml2/logout"/>
-      <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://jmartintalavera-dev-ed.my.salesforce.com/services/auth/idp/saml2/logout"/>
       <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</md:NameIDFormat>
       <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://jmartintalavera-dev-ed.my.salesforce.com/idp/endpoint/HttpPost"/>
       <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://jmartintalavera-dev-ed.my.salesforce.com/idp/endpoint/HttpRedirect"/>
